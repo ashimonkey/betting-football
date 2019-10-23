@@ -2,6 +2,11 @@
 
 @section('content')
 <div class="container">
+    <div class="card-deck">
+        <div class="card bg-dark text-secondary">aaaaa</div>
+        <div class="card bg-info">ccc<br>aaaaaaa</div>
+        <div class="card bg-warning">dededed</div>
+    </div>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -69,16 +74,5 @@
             </div>
         </div>
     </div>
-</div>
-
-<div>
-    <?='件数：'.$count ?><br>
-    <?php foreach($datas as $key => $value){ ?>
-        <?php if($key == 'logo'){ ?>
-            <img src="<?=$value ?>" alt="team_1" title="team_2"><br>
-        <?php }else{ ?>
-            <?=$key . ' : ' . $value ?><br>
-        <?php } ?>
-    <?php } ?>
 </div>
 @endsection

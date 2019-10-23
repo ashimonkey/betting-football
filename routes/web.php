@@ -18,6 +18,7 @@ Route::get('/hello', function () {
     return view('hello');
 });
 Route::get('/user/{id}', 'UserController@index');
+Route::get('/menu', 'UserController@menu');
 
 
 Auth::routes();

@@ -19,4 +19,10 @@ class UserController extends Controller
         // 取得した値をビュー「user/index」に渡す
         return view('user/index', compact('users','count','datas'));
     }
+    
+    public function menu()
+    {
+        // 取得した値をビュー「user/index」に渡す
+        return view('user/menu');
+    }
 }
